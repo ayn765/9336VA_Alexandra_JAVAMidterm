@@ -9,7 +9,7 @@ public class Numbers {
 
     /*
      * Show all the different kind of sorting algorithm by applying into (num array).
-     * Display the execution time for each sorting.Example in below.
+     * Display the execution time for each sorting algorithm.Example in below.
      *
      * Use any databases[MongoDB, Oracle or MySql] to store data and retrieve data.
      *

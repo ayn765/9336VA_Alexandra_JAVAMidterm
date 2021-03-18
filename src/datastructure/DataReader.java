@@ -12,7 +12,7 @@ public class DataReader {
          *
          * After reading from file using BufferedReader API, store each word into Stack and LinkedList. So each word
          * should construct a node in LinkedList.Then iterate/traverse through the list to retrieve as FIFO
-         * order from LinkedList and retrieve as FILO order from Stack.
+         * order from LinkedList and retrieve as LIFO order from Stack.
          *
          * Demonstrate how to use Stack using push, peek, search & pop methods.
          * Use For-Each & While-loop with Iterator to retrieve data.
