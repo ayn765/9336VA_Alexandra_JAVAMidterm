@@ -10,6 +10,15 @@ public class FindMissingNumber {
          Write a method to find the missing number from the array.
          */
         int[] array = new int[] {10, 2, 1, 4, 5, 3, 7, 8, 6};
+        findDifference(array);
 
+    }
+    public static int findDifference(int[] array){
+        int total = 55;
+        for(int i: array){
+            total -= i;
+        }
+        System.out.println("The missing number is : " + total);
+        return total;
     }
 }

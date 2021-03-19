@@ -262,19 +262,31 @@ Answer: Synchronization in java is the capability to control the access of multi
 Java Synchronization is better option where we want to allow only one thread to access the shared resource.
 
 What is a Framework?
-Answer:
+Answer: The framework is a collection of software libraries. That are intended to perform specific tasks.
+In other words, frameworks are a set of tools that are pre-build to create software.
 
 What are the testing Frameworks available in Java?
-Answer:
+Answer: JUnit, JBehave, Serenity, Selenium, TestNG, HTTPUnit, Cucumber, Rest Assured
 
 What are jUnit and testNG?
-Answer:
+Answer: JUnit is an open-source regression testing framework that is used to execute unit testing, speed up programming,
+and improve the quality of code in Java. The key purpose of introducing this framework is to allow Java developers to
+script and implement repeated test cases. This is amongst the most commonly used Java unit test frameworks.
+TestNG is similar to JUnit, yet it is configured with many annotations and superior functionalities (not supported by Junit).
+TestNG can cover almost every type of software testing, counting end-to-end, unit, integration, and functional testing.
+Both TestNG and JUnit are Java-based frameworks that allow you to write tests and scrutinize end results.
+
 
 What are the dependencies for this project?
 Answer:
 
 What is dependency injection in Java?
-Answer:
+Answer: With dependency injection, objects don't define their dependencies themselves, the dependencies are injected to
+them as needed. This way, the objects don't need to know where and how to get their dependencies, which results in loose
+coupling between objects, which makes them a lot easier to test. Usually a container manages the lifecycle of objects
+and their dependencies based on a configuration file or annotations.
 
 Explain what static binding and dynamic binding is?
-Answer:
+Answer: In Java static binding refers to the execution of a program where type of object is determined/known at compile
+time i.e when compiler executes the code it knows the type of object or class to which object belongs.While in case of
+dynamic binding the type of object is determined at runtime.
