@@ -2,20 +2,32 @@ package design;
 
 import java.time.Month;
 
-import static design.HelperMethods.isLeapYear;
+public class TimeOff {
 
-public class UnitTestingEmployeeInfo {
-    public int salary;
-    public int biWeekly;
+    private int numOfVacationDay;
+    private int numOfSickDays;
 
-    public static void main(String[] args) {
-        // Use this class to write unit tests for all user-defined methods that you have implemented in this package.
-
-        UnitTestingEmployeeInfo obj = new UnitTestingEmployeeInfo();
-        obj.biWeekly = 1995;
-       obj.checkHolidays(Month.JANUARY);
-
+    public int getNumOfVacationDay() {
+        return numOfVacationDay;
     }
+
+    public TimeOff(int numOfSickDays, int numOfVacationDay) {
+        this.numOfSickDays = numOfSickDays;
+        this.numOfVacationDay = numOfVacationDay;
+    }
+
+    public void setNumOfVacationDay(int numOfVacationDay) {
+        this.numOfVacationDay = numOfVacationDay;
+    }
+
+    public int getNumOfSickDays() {
+        return numOfSickDays;
+    }
+
+    public void setNumOfSickDays(int numOfSickDays) {
+        this.numOfSickDays = numOfSickDays;
+    }
+
     public String checkHolidays(Month month) {
         switch (month) {
             case JANUARY:

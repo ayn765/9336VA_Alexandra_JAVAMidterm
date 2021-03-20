@@ -1,6 +1,9 @@
 package datastructure;
 
+import databases.ConnectToSqlDB;
+
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class UseArrayList {
 
@@ -22,6 +25,19 @@ public class UseArrayList {
         for(int x: arrayList){
             System.out.print(x + " ");
         }
+
+        Collections.sort(arrayList);
+
+
+        ConnectToSqlDB connect = new ConnectToSqlDB();
+        try {
+            connect.insertDataFromIntegerArrayListToSqlTable(arrayList,"array_list", "SortedNums" );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
     }
 
-}
+
+//insertDataFromArrayToSqlTable(x, "array_list", "Sorted Nums");

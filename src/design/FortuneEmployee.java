@@ -1,5 +1,7 @@
 package design;
 
+import java.time.Month;
+
 public class FortuneEmployee {
 
     /**
@@ -15,6 +17,21 @@ public class FortuneEmployee {
      </p>
      **/
     public static void main(String[] args) {
+
+
+        TimeOff timeOff = new TimeOff(14, 10);
+
+        EmployeeInfo employee = new EmployeeInfo(timeOff);
+        employee.inputEmployeeName();
+        employee.setEmployeeID(123456);
+        employee.assignDepartment("hr");
+        employee.setBiWeeklyGross(6548);
+        employee.calculateSalary(2021,employee.getBiWeeklyGross());
+        employee.calculateEmployeeBonus("Best", employee.getSalary());
+        employee.benefitLayout();
+        employee.timeOff.checkHolidays(Month.JANUARY);
+
+
 
     }
 
