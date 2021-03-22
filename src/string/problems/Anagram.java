@@ -11,11 +11,11 @@ public class Anagram {
     */
 
     public static void main(String[] args) {
-        Anagram anagram = new Anagram();
-        anagram.isAnagram("Cat", "Act");
-        anagram.isAnagram("Day", "Night");
+
+       isAnagram("Cat", "Act");
+       isAnagram("Day", "Night");
     }
-    public boolean isAnagram(String word1, String word2) {
+    public static boolean isAnagram(String word1, String word2) {
         boolean flag = false;
         if (word1.length() == word2.length()) {
             char[] array1 = word1.toLowerCase().toCharArray();

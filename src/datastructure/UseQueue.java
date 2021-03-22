@@ -1,5 +1,7 @@
 package datastructure;
 
+import databases.ConnectToSqlDB;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -15,7 +17,7 @@ public class UseQueue {
          */
 
         Queue<Integer> queue = new LinkedList<>();
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             queue.add(i);
         }
         System.out.println("Elements of the queue: " + queue);
@@ -39,16 +41,16 @@ public class UseQueue {
         queue1.add("work");
 
         Iterator iterator = queue1.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
-        }System.out.println();
+        }
+        System.out.println();
 
-        for(String element: queue1){
+        for (String element : queue1) {
             System.out.print(element + " ");
         }
+        ConnectToSqlDB connect = new ConnectToSqlDB();
 
     }
-
-
 
 }

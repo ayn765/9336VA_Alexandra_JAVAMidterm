@@ -19,6 +19,8 @@ public class CollectionView {
         map.put(6, "Seattle");
 
         System.out.println("The retrieved data from the map: " + map);
+        System.out.println("The retrieved Collection view from the map: " + map.values());
+
     }
 
 }

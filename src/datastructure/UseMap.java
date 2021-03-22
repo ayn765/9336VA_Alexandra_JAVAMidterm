@@ -39,25 +39,23 @@ public class UseMap {
                 riversOfSpain.add("River Erbo");
                 riversOfSpain.add("River Duero");
 
+                //adding all arrayLists into the map:
                 Map<String, List<String>> map2 = new HashMap<>();
                 map2.put("US", riversOfUS);
                 map2.put("UK", riversOfUK);
                 map2.put("France", riversOfFrance);
                 map2.put("Russia", riversOfRussia);
-
-
                 map2.put("Spain", riversOfSpain);
 
-                for (Map.Entry<String, List<String>> country : map2.entrySet()) {
+                //Map is an Interface. Map.Entry<> method returns a collection view of the map:
+                for (Map.Entry<String, List<String>> country : map2.entrySet()) {  //entrySet() returns a set view of mappings contained in the map
                         System.out.println("The major rivers in " + country.getKey() + " are " + country.getValue());
                 }
-
+                //Interface Iterator is used to iterate and view the elements of the map:
                 Iterator<Map.Entry<String, List<String>>> it = map2.entrySet().iterator();
                 while(it.hasNext()){
                         Map.Entry<String, List<String>> pair = it.next();
                         System.out.println("The major rivers in " + pair.getKey() + " are " + pair.getValue());
                 }
-
         }
-
 }

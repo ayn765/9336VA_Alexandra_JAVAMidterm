@@ -7,8 +7,8 @@ public class TimeOff {
     private int numOfVacationDay;
     private int numOfSickDays;
 
-    public int getNumOfVacationDay() {
-        return numOfVacationDay;
+
+    public TimeOff() {
     }
 
     public TimeOff(int numOfSickDays, int numOfVacationDay) {
@@ -16,8 +16,13 @@ public class TimeOff {
         this.numOfVacationDay = numOfVacationDay;
     }
 
+    public int getNumOfVacationDay() {
+        return numOfVacationDay;
+    }
+
     public void setNumOfVacationDay(int numOfVacationDay) {
         this.numOfVacationDay = numOfVacationDay;
+        System.out.println("You have " + numOfVacationDay + " vacation days.");
     }
 
     public int getNumOfSickDays() {
@@ -26,6 +31,15 @@ public class TimeOff {
 
     public void setNumOfSickDays(int numOfSickDays) {
         this.numOfSickDays = numOfSickDays;
+        System.out.println("You have " + numOfSickDays + " sick days.");
+    }
+
+    public void signIn() {
+        System.out.println("It's 9 am. Coffee in a cup. Let's start this day.");
+    }
+
+    public void signOff() {
+        System.out.println("It's 5 pm. The work day is over. Enjoy your evening.");
     }
 
     public String checkHolidays(Month month) {
@@ -53,8 +67,10 @@ public class TimeOff {
                 break;
             case DECEMBER:
                 System.out.println("The holiday in December is Christmas Day.");
+                break;
+            default:
+                System.out.println("The are no holidays in this month.");
         }
-
         return null;
     }
 }
