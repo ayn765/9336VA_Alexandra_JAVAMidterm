@@ -25,7 +25,7 @@ public class DuplicateWord {
         char[] wordsChars;
         String words[] = st.toLowerCase().split(" ");
         System.out.println("Duplicate words in a given st : ");
-
+        //comparing every word to the rest of the words in array to find duplicates
         for (int i = 0; i < words.length; i++) {
             count = 1;
             for (int j = i + 1; j < words.length; j++) {
@@ -34,10 +34,11 @@ public class DuplicateWord {
                     words[j] = "0";
                 }
             }
-
+            //printing duplicate words
             if (count > 1 && words[i] != "0")
                 System.out.println(words[i]);
         }
+        //calculating count of all letters and dividing it by number of the words
         for (String x : words) {
             wordsChars = x.toCharArray();
             wordLength += wordsChars.length;

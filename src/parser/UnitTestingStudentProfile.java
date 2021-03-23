@@ -1,9 +1,11 @@
 package parser;
 
+import org.testng.annotations.Test;
+
 public class UnitTestingStudentProfile {
 
-    public static void main(String[] args) {
-        // Implement unit tests for all user-defined methods in this package, here.
-
+    @Test
+    public void testProcessStudentInfo() {
+        ProcessStudentInfo obj = new ProcessStudentInfo();
     }
 }

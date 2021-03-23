@@ -7,11 +7,11 @@ public class UseMap {
 
         public static void main(String[] args) {
                 /*
-                 * Demonstrate how to use Map that includes storing and retrieving elements.
-                 * Add List<String> into a Map. Like, Map<String, List<string>> list = new HashMap<String, List<String>>();
-                 * Use For-Each loop and While-loop with Iterator to retrieve data.
-                 *
-                 * Store and retrieve data from/to a database table.
+                 * Map is an Interface provided in java.util package
+                 * A HashMap stores items in "key/value" pairs, and you can access them by an index of
+                 * another type (e.g. a String). One object is used as a key (index) to another object (value).
+                 * It can store different types: String keys and Integer values, or the same type, like: String
+                 * keys and String values.
                  */
 
                 List<String> riversOfUS = new ArrayList<>();

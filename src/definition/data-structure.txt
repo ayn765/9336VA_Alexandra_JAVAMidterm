@@ -44,10 +44,13 @@ Answer: Big O Notation is used to describe the complexity of an algorithm. It he
 how long an algorithm takes to run.
 
 What is the best case to search an element from an array?
-Answer: searching by hash value
+Answer:  Binary Search show the best results for searching for an element in a array.
+Binary Search divides the array into half each time its time complexity is O(log(N)).
 
 What is the worst case to search an element from an array?
-Answer:
+Answer: Linear Search takes significantly longer than other algorithms to search for this element,
+since it evaluated each and every element before the one we're searching for. Time Complexity of Linear search is O(N)
+
 
 Describe what a tree data structure is?
 Answer: A tree data structure is defined as a collection of objects or entities known as nodes that are linked together
@@ -72,8 +75,9 @@ Answer: RDBMS – Array (i.e. Array of structures)
         · Hierarchical data model – Trees
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
-Answer:A HashMap stores items in "key/value" pairs, and you can access them by an index of another type.
-One object is used as a key (index) to another object (value).
+Answer:HashMap in Java works on hashing principle. It is a data structure which allows us to store object and retrieve
+it in constant time O(1) provided we know the key. HashMap internally stores mapping in the form of Map.Entry object which
+contains both key and value object.
 
 What is ArrayIndexOutOfBoundsException in java? When does it occur?
 Answer: ArrayIndexOutOfBoundsException occurs whenever we are trying to access any item of an array at an index which is
@@ -110,3 +114,13 @@ Draw a table with time complexity in which it will summarize all the data struct
   b) In terms of Inserting elements:
   c) In terms of Searching elements:
   d) In terms of Removing elements:
+
+  Data structure	Access	Search	Insertion	Removing
+  Array	                O(1)	O(N)	O(N)	O(N)
+  Stack	                O(N)	O(N)	O(1)	O(1)
+  Queue	                O(N)	O(N)	O(1)	O(1)
+  Linked list       	O(N)	O(N)	O(1)	O(1)
+  Hash Table	        O(N)	O(N)	O(N)	O(N)
+  Binary Search Tree	O(N)	O(N)	O(N)	O(N)
+  AVL Tree	       O(log N)	  O(log N)O(log N)	O(log N)
+  Binary Tree	        O(N)	O(N)	O(N)	O(N)

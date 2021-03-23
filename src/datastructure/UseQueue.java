@@ -10,10 +10,9 @@ public class UseQueue {
 
     public static void main(String[] args) {
         /*
-         * Demonstrate how to use Queue that includes add, peek, remove & poll elements.
-         * Use For-Each loop and While-Loop with Iterator to retrieve data.
-         *
-         * Store and retrieve data from/to a database table.
+         * The queue interface is provided in java.util package and it implements the Collection interface.
+         * The queue implements FIFO i.e. First In First Out. This means that the elements entered first are
+         * the ones that are deleted first.
          */
 
         Queue<Integer> queue = new LinkedList<>();

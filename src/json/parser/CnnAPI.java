@@ -82,7 +82,6 @@ public class CnnAPI {
 //                connect.insertDataFromIntegerArrayListToSqlTable1(obj.articles, "cnn_news", "articles" );
             }
 
-//t("INSERT INTO " + tableName + " ( " + columnName + " ) VALUES(?)");
         } catch (Exception e) {
             e.printStackTrace();
         }

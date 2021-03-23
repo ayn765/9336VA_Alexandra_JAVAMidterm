@@ -16,6 +16,10 @@ public class UnitTestSorting {
 
         // Pass the unsorted array to selectionSort() method from Sort class
         sort.selectionSort(unSortedArray);
+        for(int x: unSortedArray){
+            System.out.println(x);
+        }
+        Assert.assertEquals(sortedArray, unSortedArray, "ARRAY IS NOT SORTED... YET!\n***YOU GOT THIS!***");
 
         // Verify if the unsorted array is sorted by the selectionSort() method
         try {
