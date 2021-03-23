@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+import json.parser.CnnAPI;
 import parser.Student;
 
 public class ConnectToSqlDB {
@@ -221,6 +222,27 @@ public class ConnectToSqlDB {
             for (Integer i : list) {
                 ps = connect.prepareStatement("INSERT INTO " + tableName + " ( " + columnName + " ) VALUES(?)");
                 ps.setObject(1, i);
+                ps.executeUpdate();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+    public void insertDataFromIntegerArrayListToSqlTable1(List<CnnAPI.ArticleDTO> list, String tableName, String columnName) {
+        try {
+            connectToSqlDatabase();
+            ps = connect.prepareStatement("DROP TABLE IF EXISTS `" + tableName + "`;");
+            ps.executeUpdate();
+            ps = connect.prepareStatement("CREATE TABLE `" + tableName + "` (`ID` int(11) NOT NULL AUTO_INCREMENT,`" + columnName + "` bigint(20) DEFAULT NULL, PRIMARY KEY (`ID`) );");
+            ps.executeUpdate();
+            for (CnnAPI.ArticleDTO r : list) {
+                ps = connect.prepareStatement("INSERT INTO " + tableName + " ( " + columnName + " ) VALUES(?)");
+                ps.setObject(1, r);
                 ps.executeUpdate();
             }
 
